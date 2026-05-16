@@ -1,7 +1,7 @@
 <x-layout>
     <h1>Tambah Prodi</h1>
 
-    <form action="/prodi" method="POST" enctype="multipart/form-data"></form> 
+    <form action="/prodi" method="POST" enctype="multipart/form-data"> 
     @csrf
     <div class="form-group">
         <select name="fakultas_id" class="form-select">
@@ -20,7 +20,8 @@
         <input name="nama_kaprodi" type="text" class="form-control">
     </div>
     <div class="form-group">
-        <input name="photo_prodi" type="file" accept="image/*" class="form-control">
+        <input name="photo_kaprodi" type="file" accept="image/*" class="form-control">
     </div>
     <button type="submit" class="btn btn-primary">Simpan</button>
+    </form>
 </x-layout>
